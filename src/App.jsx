@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
 import App1 from "./components/App1";
 import App2 from "./components/App2";
 import App3 from "./components/App3";
@@ -24,20 +24,17 @@ import App20 from "./components/App20";
 import App21 from "./components/App21";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import './App.css'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-
+import "./App.css";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <BrowserRouter>
-    <header />
-        
+      <Header />
       <Routes>
-        <Route path="/" element={<App1 />}></Route>
-          <Route path="/app2" element={<App2 />}></Route>
-           <Route path="/app4" element={<App4 />} />
+        <Route path="/" element={<App1 />} />
+        <Route path="/app2" element={<App2 />} />
+        <Route path="/app3" element={<App3 />} />
+        <Route path="/app4" element={<App4 />} />
         <Route path="/app5" element={<App5 />} />
         <Route path="/app6" element={<App6 />} />
         <Route path="/app7" element={<App7 />} />
@@ -56,14 +53,9 @@ function App() {
         <Route path="/app20" element={<App20 />} />
           <Route path="/app21" element={<App21 />} />
       </Routes>
-     
 
-
-     <footer />
-      &copy; All rights reserved
-    
+      <Footer />
     </BrowserRouter>
   );
 }
-
-export default App
+export default App;
